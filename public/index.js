@@ -35,6 +35,8 @@ const app = function() {
       doors.forEach(function(door){
         if(door.number === randomNumber) {
           console.log(door);
+          console.log(randomNumber);
+          console.log(this);
           doorColor = "red";
           context.fillStyle = doorColor;
 
